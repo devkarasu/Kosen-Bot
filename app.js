@@ -32,7 +32,7 @@ client.on('message', m => {
         '自分からサーバへのPingを表示します\n今後任意のサーバへのPingを実装予定です' +
         '```\n' + p + 'BotGit\n```\n' +
         'このBotのGitHubのURLを投げます\nIssueやPull Request等待っています\n' +
-        'その他\nその他要望等ありましたらMakotiaの[Twitter](https://twitter.com/hs6a)やDiscord、Issueなどどうぞ');
+        'その他\nその他要望等ありましたらMakotiaのTwitter(@hs6a)やDiscord(Makotia#2337)、Issueなどどうぞ');
     }
   };
 });
