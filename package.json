@@ -1,0 +1,25 @@
+{
+  "name": "proconist_bot",
+  "version": "1.0.0",
+  "description": "Discord Bot for Proconist.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mak0tia/proconist_bot.git"
+  },
+  "keywords": [
+    "discord"
+  ],
+  "author": "mak0tia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mak0tia/proconist_bot/issues"
+  },
+  "homepage": "https://github.com/mak0tia/proconist_bot#readme",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}
