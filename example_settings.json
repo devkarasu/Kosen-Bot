@@ -1,5 +1,6 @@
 {
   "DiscordToken": "",
   "prefix": "",
-  "gameName": ""
+  "gameName": "",
+  "gitURL": ""
 }

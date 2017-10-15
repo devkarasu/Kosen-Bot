@@ -18,7 +18,10 @@ client.on('message', m => {
     };
     if (m.content === p + 'ping') {
       m.channel.send(r + 'pong  ' + `${Math.round(client.ping)}` + 'ms');
-    }
+    };
+    if (m.content === p + 'BotGit') {
+      m.reply(settings.gitURL);
+    };
   };
 });
 
