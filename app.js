@@ -22,7 +22,7 @@ client.on("message", m => {
     }
 
     if (m.content.match(/.*nvidia.*/i)) {
-      m.channel.send("https://files.3mdev.space/bot/fuck.jpg");
+      m.channel.send({file:"https://files.3mdev.space/bot/fuck.jpg"});
     }
 
     if (m.content === p + "BotGit") {
@@ -30,7 +30,15 @@ client.on("message", m => {
     }
 
     if (m.content.match(/.*(唐澤|からさわ|尊師|あああああ|ﾌﾞﾘﾌﾞﾘﾌﾞﾘ).*/)) {
-      m.channel.send("http://www.asahicom.jp/articles/images/AS20170804000268_comm.jpg");
+      m.channel.send({file:"http://www.asahicom.jp/articles/images/AS20170804000268_comm.jpg"});
+    }
+
+    if (m.content.match(/(.+)できた.*/)) {
+      var msg = m.content.match(/(.+)できた.*/)[1];
+      m.channel.send(r + "すっごーい！"
+        + m.author.username + "ちゃんは"
+        + msg + "できるフレンズなんだね！");
+      m.channel.send({file: "https://files.3mdev.space/bot/serval_great.jpg"});
     }
 
     if (m.content === p + "help") {
