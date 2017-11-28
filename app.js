@@ -29,6 +29,10 @@ client.on("message", m => {
       m.reply(settings.gitURL);
     }
 
+    if (m.content.match(/.*(唐澤|からさわ|尊師|あああああ|ﾌﾞﾘﾌﾞﾘﾌﾞﾘ).*/)) {
+      m.channel.send("http://www.asahicom.jp/articles/images/AS20170804000268_comm.jpg");
+    }
+
     if (m.content === p + "help") {
       m.channel.send("```\n" + p + "help\n``` \n" +
         "このメニューが表示されます\n" +
