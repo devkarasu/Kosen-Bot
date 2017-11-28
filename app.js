@@ -21,6 +21,10 @@ client.on("message", m => {
       m.channel.send(r + "pong  " + `${Math.round(client.ping)}` + "ms");
     }
 
+    if (m.content.match(/.*nvidia.*/i)) {
+      m.channel.send("https://files.3mdev.space/bot/fuck.jpg");
+    }
+
     if (m.content === p + "BotGit") {
       m.reply(settings.gitURL);
     }
