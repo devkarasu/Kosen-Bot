@@ -4,11 +4,12 @@
   "description": "Discord Bot for Proconist.",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+		"test": "eslint *.js",
+		"start": "node app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mak0tia/proconist_bot.git"
+    "url": "https://github.com/mak0tia/proconist_bot.git"
   },
   "keywords": [
     "discord"
@@ -16,11 +17,12 @@
   "author": "mak0tia",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mak0tia/proconist_bot/issues"
+    "url": "https://github.com/mak0tia/Kosen-Bot/issues"
   },
-  "homepage": "https://github.com/mak0tia/proconist_bot#readme",
+  "homepage": "https://github.com/mak0tia/Kosen-Bot#readme",
   "dependencies": {
-    "discord.js": "^11.2.1"
+    "discord.js": "^11.2.1",
+    "request": "^2.83.0"
   },
   "devDependencies": {
     "eslint": "^4.12.0"

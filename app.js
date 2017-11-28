@@ -1,6 +1,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-var fs = require("fs");
+const fs = require("fs");
+const req = require("request");
 var settings = JSON.parse(fs.readFileSync("./setting.json", "utf8"));
 const p = settings.prefix;
 
@@ -39,6 +40,20 @@ client.on("message", m => {
         + m.author.username + "ちゃんは"
         + msg + "できるフレンズなんだね！");
       m.channel.send({file: "https://files.3mdev.space/bot/serval_great.jpg"});
+    }
+
+    if (m.content.match(/.\/(ちょまど|松屋)/)) {
+      req.get({
+        url: "http://matsuya-api.herokuapp.com/v2/random",
+        qs: {
+          testkey: "testvalue",
+          hoge: "hoge"
+        }
+      }, function (error, response, body) {
+        console.log(body);
+        const res = JSON.parse(body);
+        m.channel.send(res.menu);
+      });
     }
 
     if (m.content === p + "help") {
