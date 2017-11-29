@@ -46,7 +46,7 @@ client.on("message", m => {
       m.channel.send({file: "https://files.3mdev.space/bot/serval_great.jpg"});
     }
 
-    if (m.content.match(/.\/(ちょまど|松屋)/)) {
+    if (m.content.match(/(ちょまど|松屋)/)) {
       req.get({
         url: "http://matsuya-api.herokuapp.com/v2/random",
         qs: {
