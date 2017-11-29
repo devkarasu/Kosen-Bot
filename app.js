@@ -22,6 +22,10 @@ client.on("message", m => {
       m.channel.send(r + "pong  " + `${Math.round(client.ping)}` + "ms");
     }
 
+    if (m.content.match(/.*なんなん.*/)) {
+      m.channel.send(r + "( `o´ )ぎんなん");
+    }
+
     if (m.content.match(/.*nvidia.*/i)) {
       m.channel.send({file:"https://files.3mdev.space/bot/fuck.jpg"});
     }
@@ -34,7 +38,7 @@ client.on("message", m => {
       m.channel.send({file:"http://www.asahicom.jp/articles/images/AS20170804000268_comm.jpg"});
     }
 
-    if (m.content.match(/(.+)できた.*/)) {
+    if (m.content.match(/.+できた.*/)) {
       var msg = m.content.match(/(.+)できた.*/)[1];
       m.channel.send(r + "すっごーい！"
         + m.author.username + "ちゃんは"
