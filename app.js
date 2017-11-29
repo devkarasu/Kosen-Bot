@@ -15,7 +15,7 @@ client.on("message", m => {
   if (m.author.bot) return;
   else {
     if (m.content === p + "invite") {
-      m.channel.send("https://discord.gg/pcH6z9p");
+      m.channel.send(settings.inviteURL);
     }
 
     if (m.content === p + "ping") {
@@ -27,7 +27,7 @@ client.on("message", m => {
     }
 
     if (m.content.match(/.*nvidia.*/i)) {
-      m.channel.send({file:"https://files.3mdev.space/bot/fuck.jpg"});
+      m.channel.send({file:"https://cdn.discordapp.com/attachments/360975956791263233/385377392803315713/fuck.jpg"});
     }
 
     if (m.content === p + "BotGit") {
@@ -43,7 +43,7 @@ client.on("message", m => {
       m.channel.send(r + "すっごーい！"
         + m.author.username + "ちゃんは"
         + msg + "できるフレンズなんだね！");
-      m.channel.send({file: "https://files.3mdev.space/bot/serval_great.jpg"});
+      m.channel.send({file: "https://cdn.discordapp.com/attachments/360975956791263233/385377100020056065/serval_great.jpg"});
     }
 
     if (m.content.match(/(ちょまど|松屋)/)) {
