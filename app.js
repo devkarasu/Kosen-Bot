@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const fs = require("fs");
 const req = require("request");
-var settings = JSON.parse(fs.readFileSync("./setting.json", "utf8"));
+var settings = JSON.parse(fs.readFileSync("./settings.json", "utf8"));
 const p = settings.prefix;
 
 client.on("ready", () => {
