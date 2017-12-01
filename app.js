@@ -22,7 +22,7 @@ client.on("message", m => {
       m.channel.send(r + "pong  " + `${Math.round(client.ping)}` + "ms");
     }
 
-    if (m.content.match(/.*なんなん.*/)) {
+    if (m.content.match(/.*(なん|何)なん.*/)) {
       m.channel.send(r + "( `o´ )ぎんなん");
     }
 
@@ -46,13 +46,10 @@ client.on("message", m => {
       m.channel.send({file: "https://cdn.discordapp.com/attachments/360975956791263233/385377100020056065/serval_great.jpg"});
     }
 
-    if (m.content.match(/(ちょまど|松屋)/)) {
+    if (m.content.match(/.*(ちょまど|松屋).*/)) {
       req.get({
         url: "http://matsuya-api.herokuapp.com/v2/random",
-        qs: {
-          testkey: "testvalue",
-          hoge: "hoge"
-        }
+        qs: {}
       }, function (error, response, body) {
         console.log(body);
         const res = JSON.parse(body);
