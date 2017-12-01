@@ -26,6 +26,10 @@ client.on("message", m => {
       m.channel.send(r + "( `o´ )ぎんなん");
     }
 
+    if (m.content.match(/.*ぎんなん.*/)) {
+      m.channel.send(r + "なんなん");
+    }
+
     if (m.content.match(/.*nvidia.*/i)) {
       m.channel.send({file:"https://cdn.discordapp.com/attachments/360975956791263233/385377392803315713/fuck.jpg"});
     }

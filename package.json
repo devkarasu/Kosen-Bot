@@ -4,8 +4,8 @@
   "description": "Discord Bot for Proconist.",
   "main": "app.js",
   "scripts": {
-		"test": "eslint *.js",
-		"start": "node app.js"
+    "test": "eslint *.js",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
